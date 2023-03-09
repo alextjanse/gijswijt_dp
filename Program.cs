@@ -6,10 +6,10 @@ class Program
 {
     struct Cell
     {
-        public ulong Pattern;
+        public BigInteger Pattern;
         public uint Occurrences;
 
-        public Cell(ulong pattern, uint occurrences)
+        public Cell(BigInteger pattern, uint occurrences)
         {
             Pattern = pattern;
             Occurrences = occurrences;
@@ -37,7 +37,7 @@ class Program
             for (int j = 0; j <= i; j++)
             {
                 // Pattern is saved as a base-10 number, could be done differently as well
-                ulong pattern = (i - 1 >= 0 && j - 1 >= 0 ? array[i - 1, j - 1].Pattern * 5 : 0) + sequence[i];
+                BigInteger pattern = (i - 1 >= 0 && j - 1 >= 0 ? array[i - 1, j - 1].Pattern * 5 : 0) + sequence[i];
 
                 int length = j + 1;
 
