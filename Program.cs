@@ -30,6 +30,7 @@ class Program
 
         Stopwatch sw = new Stopwatch();
         sw.Start();
+        
         for (int i = 0; i < n - 1; i++)
         {
             uint max = 1;
